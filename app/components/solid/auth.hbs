@@ -1,0 +1,5 @@
+<p>Welcome {{this.getSession}}!</p>
+{{#if this.isConnected}}
+    <button {{on "click" this.clicked}}>Logout</button>
+{{/if}}
+{{yield}}
